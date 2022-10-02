@@ -1,0 +1,29 @@
+1.private Rigibody rigibody定义刚体组建的名字
+2.this.GetComponent<Rigibody>() 获得刚体组件
+3.input.GetAxis() 获得横向和纵向输入的名称
+4.rigibody.augularVelocity 旋转的角度等
+
+5.对于horizontal和Vertical的操控，通过设置去获取
+
+
+
+一.UI
+unity场景进行切换：
+
+
+public void Scene1()
+	{
+		SceneManager.LoadScene("StarGame");
+	}
+
+    // Update is called once per frame
+	public void Scene2()
+	{
+		SceneManager.LoadScene("SampleScene");
+	}
+
+就是在两个场景中分别创建一个空物体，将脚本挂在两个空物体上，通过按键的检测实践，然后空物体挂在按键上，选择需要切换的场景的方法进行切换,对于游戏主界面也是一样的实现方式，注意要在那个设置里面主动去添加两个场景，并且编号；
+
+二.游戏的物理逻辑的实现和方法
+
+见脚本.cs文件，以及unityAPI的操作。
